@@ -45,27 +45,27 @@
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">Home</button></a>
         <a href="./jan.html"><button
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">January</button></a>
-        <a href=""><button
+        <a href="./feb.html"><button
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">February</button></a>
-        <a href=""><button
+        <a href="./mar.html"><button
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">March</button></a>
-        <a href=""><button
+        <a href="./apr.html"><button
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">April</button></a>
-        <a href=""><button
+        <a href="./may.html"><button
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">May</button></a>
-        <a href=""><button
+        <a href="./jun.html"><button
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">June</button></a>
-        <a href=""><button
+        <a href="./july.html"><button
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">July</button></a>
-        <a href=""><button
+        <a href="./aug.html"><button
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">August</button></a>
-        <a href=""><button
+        <a href="./sep.html"><button
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 17px;">September</button></a>
-        <a href=""><button
+        <a href="./oct.html"><button
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">October</button></a>
-        <a href=""><button
+        <a href="./nov.html"><button
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">November</button></a>
-        <a href=""><button
+        <a href="./dec.html"><button
                 style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">December</button></a>
     </div>
     <div class="cal">
@@ -81,53 +81,75 @@
                 <th>Saturday</th>
             </tr>
             <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
+               <Th></Th>
+               <Th></Th>
+               <Th></Th>
+                <th><button onclick="newyear()">1</button></th>
+                <th><button onclick="normal()">2</button></th>
+                <th><button onclick="normal()">3</button></th>
+                <th><button onclick="normal()">4</button></th>
             </tr>
             <tr>
-                <th>5</th>
-                <th>6</th>
-                <th>7</th>
-                <th>8</th>
-                <th>9</th>
-                <th>10</th>
-                <th>11</th>
+                <th><button onclick="normal()">5</th>
+                <th><button onclick="guru()">6</button></th>
+                <th><button onclick="normal()">7</th>
+                <th><button onclick="normal()">8</th>
+                <th><button onclick="normal()">9</th>
+                <th><button onclick="normal()">10</th>
+                <th><button onclick="normal()">11</th>
             </tr>
             <tr>
-                <th>12</th>
-                <th>13</th>
-                <th>14</th>
-                <th>15</th>
-                <th>16</th>
-                <th>17</th>
-                <th>18</th>
+                <th><button onclick="normal()">12</th>
+                <th><button onclick="normal()">13</th>
+                <th><button onclick="makar()">14</th>
+                <th><button onclick="normal()">15</button></th>
+                <th><button onclick="normal()">16</button></th>
+                <th><button onclick="normal()">17</th>
+                <th><button onclick="normal()">18</th>
             </tr>
             <tr>
-                <th>19</th>
-                <th>20</th>
-                <th>21</th>
-                <th>22</th>
-                <th>23</th>
-                <th>24</th>
-                <th>25</th>
+                <th><button onclick="normal()">19</th>
+                <th><button onclick="normal()">20</th>
+                <th><button onclick="normal()">21</th>
+                <th><button onclick="normal()">22</th>
+                <th><button onclick="normal()">23</th>
+                <th><button onclick="normal()">24</th>
+                <th><button onclick="normal()">25</th>
             </tr>
             <tr>
-                <th>26</th>
-                <th>27</th>
-                <th>28</th>
-                <th>29</th>
-                <th>30</th>
-                <th>31</th>
+                <th><button onclick="republic()">26</th>
+                <th><button onclick="normal()">27</th>
+                <th><button onclick="normal()">28</th>
+                <th><button onclick="normal()">29</th>
+                <th><button onclick="normal()">30</th>
+                <th><button onclick="normal()">31</th>
                 
             </tr>
         </table>
         </center>
     </div>
+    <div id="normal"></div>
+    <div id="makar"></div>
+    <div id="republic"></div>
+    <div id="guru"></div>
+    <div  id="newyear"></div>
+    <script>
+ function normal(){
+    document.getElementById("normal").innerHTML = "NO FESTIVALS TODAY";
+ }
+ function guru(){
+    document.getElementById("guru").innerHTML = "GURU GOVIND SINGH JAYANTI";
+ }
+ function makar(){
+    document.getElementById("makar").innerHTML = "MAKAR SANKRANTI, PONGAL, HAZARAT ALI 's BIRTHDAY";
+ }
+ function republic(){
+    document.getElementById("republic").innerHTML = "REPUBLIC DAY";
+ }
+ function newyear(){
+    document.getElementById("newyear").innerHTML = "NEW YEAR'S DAY";
+ }
+    </script>
 </body>
 
 </html>
