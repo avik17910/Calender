@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April</title>
+    <Style>
+        .top {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(158, 247, 242);
+        }
+
+        .head {
+            font-size: 75px;
+            margin-top: -120px;
+            color: rgb(226, 43, 43);
+        }
+
+        .month {
+            margin-top: 50px;
+            margin-left: 10%;
+
+
+        }
+        .cal table tr th{
+            border: 3px solid black;
+            border-collapse:collapse ;
+        }
+        table{
+            margin-top: 30px;
+            
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="top"> </div>
+    <div class="head">
+        <center> <b>April - 2025</b></center>
+    </div>
+    <div class="month">
+        <a href="./calender.html"target="_blank"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">Home</button></a>
+        <a href="./jan.html"target="_blank"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">January</button></a>
+        <a href="./feb.html"target="_blank"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">February</button></a>
+        <a href="./mar.html"target="_blank"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">March</button></a>
+        <a href="./apr.html"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">April</button></a>
+        <a href="./may.html"target="_blank"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">May</button></a>
+        <a href="./jun.html"target="_blank"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">June</button></a>
+        <a href="./july.html"target="_blank"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">July</button></a>
+        <a href="./aug.html"target="_blank"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">August</button></a>
+        <a href="./sep.html"target="_blank"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 17px;">September</button></a>
+        <a href="./oct.html"target="_blank"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">October</button></a>
+        <a href="./nov.html"target="_blank"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">November</button></a>
+        <a href="./dec.html"target="_blank"><button
+                style="border: 2px yellow solid;margin-right: 10px; height: 50px;width: 100px; font-size: 20px;">December</button></a>
+    </div>
+    <div class="cal">
+        <center>
+        <table>
+            <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+               
+               <Th></Th>
+               <Th></Th>
+                <th><button onclick="normal()">1</button></th>
+                <th><button onclick="normal()">2</button></th>
+                <th><button onclick="normal()">3</button></th>
+                <th><button onclick="normal()">4</button></th>
+                <th ><button onclick="normal()">5</th>
+            </tr>
+            <tr>
+              <th style=" background-color: rgb(230, 245, 100); "><button onclick="ram()">6</button></th>
+                <th><button onclick="normal()">7</th>
+                <th><button onclick="normal()">8</th>
+                <th><button onclick="normal()">9</th>
+                <th><button onclick="mahavir()">10</th>
+                <th><button onclick="normal()">11</th>
+                    <th><button onclick="normal()">12</th>
+            </tr>
+            <tr>
+               
+                <th  style=" background-color: rgb(230, 245, 100); "><button onclick="vaisakhi()">13</th>
+                <th><button onclick="ambedkar()">14</th>
+                <th><button onclick="bihu()">15</button></th>
+                <th><button onclick="normal()">16</button></th>
+                <th><button onclick="normal()">17</th>
+                <th><button onclick="good()">18</th>
+                    <th ><button onclick="normal()">19</th>
+            </tr>
+            <tr>
+               
+                <th  style=" background-color: rgb(230, 245, 100);"><button onclick="normal()">20</th>
+                <th><button onclick="normal()">21</th>
+                <th><button onclick="normal()">22</th>
+                <th><button onclick="normal()">23</th>
+                <th><button onclick="normal()">24</th>
+                <th><button onclick="normal()">25</th>
+                    <th ><button onclick="normal()">26</th>
+            </tr>
+            <tr>
+              
+                <th style=" background-color: rgb(230, 245, 100); "><button onclick="normal()">27</th>
+                <th><button onclick="normal()">28</th>
+                <th><button onclick="normal()">29</th>
+                <th><button onclick="normal()">30</th>
+                <th><button onclick="normal()">31</th>
+                
+            </tr>
+        </table>
+        </center>
+    </div>
+    <div id="normal"></div>
+    <div id="ram"></div>
+    <div id="bihu"></div>
+    <div id="ambedkar"></div>
+    <div  id="good"></div>
+    <div  id="mahavir"></div>
+    <div  id="vaisakhi"></div>
+    <script>
+ function normal(){
+    document.getElementById("normal").innerHTML = "NO FESTIVALS TODAY";
+ }
+ function ram(){
+    document.getElementById("ram").innerHTML = "RAM NAVAMI";
+    }
+    function bihu(){
+        document.getElementById("bihu").innerHTML = "BIHU";
+        }
+        function ambedkar(){
+            document.getElementById("ambedkar").innerHTML = "DR. B.R. AMBEDKAR JAYANTI & MESADI";
+            }
+            function good(){
+                document.getElementById("good").innerHTML = "GOOD FRIDAY";
+            }
+            function mahavir(){
+                document.getElementById("mahavir").innerHTML = "MAHAVIR JAYANTI";
+            }
+            function vaisakhi(){
+                document.getElementById("vaisakhi").innerHTML = "VAISAKHI";
+            }
+ 
+    </script>
+</body>
+
+</html>    
+
+
+      
